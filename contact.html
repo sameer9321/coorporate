@@ -26,51 +26,53 @@
 <!-- NAVBAR -->
 <nav class="bg-gray-900 text-white">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+
+    <!-- Logo -->
     <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-white text-black font-bold flex items-center justify-center">MJN</div>
+      <div class="w-10 h-10 bg-white text-black font-bold flex items-center justify-center">
+        MJN
+      </div>
       <span class="font-semibold">MJN Digital</span>
     </div>
 
-   <ul class="hidden md:flex gap-6 text-sm">
-  <li>
-    <a href="index.html" class="hover:text-sky-400 cursor-pointer">
-      Home
-    </a>
-  </li>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6 text-sm">
+      <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
+      <li><a href="about.html" class="hover:text-sky-400">About Us</a></li>
+      <li><a href="why-mjn-digital.html" class="hover:text-sky-400">Why MJN Digital</a></li>
+      <li><a href="signage-solutions.html" class="hover:text-sky-400">Signage Solutions</a></li>
+      <li><a href="contact.html" class="hover:text-sky-400">Contact Us</a></li>
+    </ul>
 
-  <li>
-    <a href="about.html" class="hover:text-sky-400 cursor-pointer">
-      About Us
-    </a>
-  </li>
-
-  <li>
-    <a href="why-mjn-digital.html" class="hover:text-sky-400 cursor-pointer">
-      Why MJN Digital
-    </a>
-  </li>
-
-  <li>
-    <a href="signage-solutions.html" class="hover:text-sky-400 cursor-pointer">
-      Signage Solutions
-    </a>
-  </li>
-
-  <li>
-    <a href="contact.html" class="hover:text-sky-400 cursor-pointer">
-      Contact Us
-    </a>
-  </li>
-</ul>
-
-
-    <button class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded text-sm">
-      <a href="contact.html" class="hover:text-sky-400 cursor-pointer">
+    <!-- Desktop Button -->
+    <a href="contact.html"
+       class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
       Book an Appointment
     </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
+      <i id="menu-icon" class="fas fa-bars"></i>
     </button>
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pb-4">
+    <ul class="space-y-4 text-sm">
+      <li><a href="index.html" class="block hover:text-sky-400">Home</a></li>
+      <li><a href="about.html" class="block hover:text-sky-400">About Us</a></li>
+      <li><a href="why-mjn-digital.html" class="block hover:text-sky-400">Why MJN Digital</a></li>
+      <li><a href="signage-solutions.html" class="block hover:text-sky-400">Signage Solutions</a></li>
+      <li><a href="contact.html" class="block hover:text-sky-400">Contact Us</a></li>
+    </ul>
+
+    <a href="contact.html"
+       class="block mt-4 text-center bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
+      Book an Appointment
+    </a>
+  </div>
 </nav>
+
 
 <!-- HERO -->
 <section class="contact-hero">
@@ -192,6 +194,8 @@
     © Copyright 2024 MJN Digital | Powered by MJN Digital
   </div>
 </footer>
+
+<script src="./script.js"></script>
 
 </body>
 </html>
