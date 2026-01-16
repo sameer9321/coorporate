@@ -1,205 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CorporateX | Contact</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khurshid Media Solutions | Contact Us</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              kmsOrange: "#FF5722",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-</head>
-<body class="bg-gray-50">
+    />
 
-    <!-- ================= TOP BAR ================= -->
- <div class="bg-sky-500 text-white text-sm"> 
-  <div class="max-w-7xl mx-auto flex justify-between px-4 py-2">
-    <div class="flex gap-4">
-      <span>📞 021-34572307</span>
-      <span>✉ info@mjndigital.pk</span>
-    </div>
-    <div class="flex gap-3">
-      <span>in</span>
-      <span>f</span>
-    </div>
-  </div>
-</div>
-<!-- NAVBAR -->
-<nav class="bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-white text-black font-bold flex items-center justify-center">
-        MJN
+  <body class="bg-gray-50 text-gray-800">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div class="flex items-center gap-3">
+          <img src="./images/KMS-logo 1.png" class="h-10" alt="KMS Logo" />
+          <span class="font-bold text-xl tracking-tight"
+            >KHURSHID
+            <span class="text-kmsOrange text-sm block -mt-1 uppercase"
+              >Media Solutions</span
+            ></span
+          >
+        </div>
+
+        <ul
+          class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wide"
+        >
+          <li><a href="./index.html" class="text-kmsOrange">Home</a></li>
+          <li>
+            <a href="./about.html" class="hover:text-kmsOrange transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-kmsOrange transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="hover:text-kmsOrange transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="contact.html"
+          class="hidden md:inline-block bg-kmsOrange hover:bg-orange-600 px-6 py-2 rounded text-sm font-bold transition"
+        >
+          GET IN TOUCH
+        </a>
+
+        <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
       </div>
-      <span class="font-semibold">MJN Digital</span>
-    </div>
+    </nav>
 
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex gap-6 text-sm">
-      <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="hover:text-sky-400">Contact Us</a></li>
-    </ul>
+    <!-- ================= HERO ================= -->
+    <section class="bg-black text-white">
+      <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Contact <span class="text-kmsOrange">Us</span>
+        </h1>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Let’s discuss how KHURSHID MEDIA SOLUTIONS can bring your vision to
+          life.
+        </p>
+        <div class="w-24 h-1 bg-kmsOrange mx-auto mt-6"></div>
+      </div>
+    </section>
 
-    <!-- Desktop Button -->
-    <a href="contact.html"
-       class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
+    <!-- ================= CONTACT INFO ================= -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-phone text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Call Us</h4>
+          <p class="text-gray-600">0300-9288621</p>
+        </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
-      <i id="menu-icon" class="fas fa-bars"></i>
-    </button>
-  </div>
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-envelope text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Email</h4>
+          <p class="text-gray-600">kmediasolutionspk@gmail.com</p>
+        </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pb-4">
-    <ul class="space-y-4 text-sm">
-      <li><a href="index.html" class="block hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="block hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="block hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="block hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="block hover:text-sky-400">Contact Us</a></li>
-    </ul>
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-map-marker-alt text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Location</h4>
+          <p class="text-gray-600">Gulshan-e-Iqbal, Karachi</p>
+        </div>
+      </div>
+    </section>
 
-    <a href="contact.html"
-       class="block mt-4 text-center bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
-  </div>
-</nav>
+    <!-- ================= FORM ================= -->
+    <section class="py-20 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Image -->
+        <img
+          src="./images/corporate-hero 1.png"
+          class="rounded-xl shadow-2xl border-4 border-kmsOrange/20"
+          alt="Contact KMS"
+        />
 
+        <!-- Form -->
+        <div
+          class="bg-gray-50 p-10 rounded-xl shadow-lg border-l-4 border-kmsOrange"
+        >
+          <h3 class="text-3xl font-bold mb-2">
+            Send Us a <span class="text-kmsOrange">Message</span>
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Fill out the form and our team will contact you shortly.
+          </p>
 
-<!-- HERO -->
-<section class="contact-hero">
-  <div class="max-w-7xl mx-auto px-6 py-24 text-white text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
-    <p class="text-lg opacity-90">
-      We’d love to hear from you. Let’s build something great together.
-    </p>
-  </div>
-</section>
+          <form class="space-y-5">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
 
-<!-- CONTACT INFO CARDS -->
-<section class="py-16">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-3 gap-8 text-center">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
 
-      <div class="info-card">
-        <img src="https://img.icons8.com/fluency/48/phone.png" class="mx-auto mb-4"/>
-        <h4 class="info-title">Phone</h4>
-        <p>+1 234 567 890</p>
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
+
+            <textarea
+              placeholder="Your Message"
+              class="w-full px-4 py-3 border rounded h-32 focus:ring-2 focus:ring-kmsOrange outline-none"
+            ></textarea>
+
+            <button
+              class="w-full bg-kmsOrange hover:bg-orange-600 text-white font-bold py-3 rounded transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-4">Our Location</h3>
+        <div class="w-20 h-1 bg-kmsOrange mx-auto mb-10"></div>
+
+        <div class="rounded-xl overflow-hidden shadow-lg border">
+          <iframe
+            class="w-full h-96"
+            src="https://www.google.com/maps?q=Gulshan%20Iqbal%20Karachi&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-gray-400 py-12 border-t-4 border-kmsOrange">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">
+            Khurshid Media Solutions
+          </h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Innovative audio-visual solutions that elevate communication,
+            engagement, and experiences.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mediaksolutions/?originalSubdomain=pk"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Quick Links</h4>
+          <ul class="space-y-3text-sm ">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Get In Touch</h4>
+          <p class="text-sm">
+            <i class="fas fa-map-marker-alt text-kmsOrange mr-2 mb-3"></i>
+            Gulshan-e-Iqbal, Karachi
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-phone text-kmsOrange mr-2 mb-3"></i> 0300-9288621
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-envelope text-kmsOrange mr-2 mb-3"></i>
+            kmediasolutionspk@gmail.com
+          </p>
+        </div>
       </div>
 
-      <div class="info-card">
-        <img src="https://img.icons8.com/fluency/48/email.png" class="mx-auto mb-4"/>
-        <h4 class="info-title">Email</h4>
-        <p>info@corporatex.com</p>
+      <div
+        class="text-center mt-12 pt-8 border-t border-gray-800 text-xs uppercase tracking-widest"
+      >
+        © Copyright 2026 KHURSHID MEDIA SOLUTIONS
       </div>
+    </footer>
 
-      <div class="info-card">
-        <img src="https://img.icons8.com/fluency/48/marker.png" class="mx-auto mb-4"/>
-        <h4 class="info-title">Location</h4>
-        <p>New York, USA</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FORM + IMAGE -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
-    <!-- IMAGE -->
-    <img
-      src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
-      class="rounded-2xl shadow-xl border"
-      alt="Contact Team">
-
-    <!-- FORM -->
-    <div>
-      <h3 class="section-title mb-6">Send Us a Message</h3>
-
-      <form class="card space-y-5 border">
-        <input type="text" placeholder="Your Name" class="input-field">
-        <input type="email" placeholder="Your Email" class="input-field">
-        <input type="text" placeholder="Subject" class="input-field">
-        <textarea placeholder="Your Message" class="input-field h-32"></textarea>
-        <button class="btn-primary w-full">Send Message</button>
-      </form>
-    </div>
-
-  </div>
-</section>
-
-<!-- MAP -->
-<section class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h3 class="section-title mb-10">Our Location</h3>
-    <div class="rounded-xl overflow-hidden border shadow-lg">
-      <iframe
-        class="w-full h-96"
-        src="https://www.google.com/maps?q=New%20York&output=embed"
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="py-20 bg-blue-600 text-white text-center">
-  <h3 class="text-3xl font-bold mb-4">Let’s Start Your Project</h3>
-  <p class="mb-6">Contact us today and grow your business faster.</p>
-  <a href="#" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
-    Book a Free Consultation
-  </a>
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-300 text-sm py-10">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-    <div>
-      <h4 class="font-semibold mb-3 text-white">MJN Digital</h4>
-      <p>
-        Empowering organizations with innovative digital signage solutions.
-      </p>
-    </div>
-
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Quick Links</h4>
-      <ul class="space-y-1">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Why MJN Digital</li>
-        <li>Signage Solutions</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Get In Touch</h4>
-      <p>Block A, Ground Floor</p>
-      <p>Gulshan Iqbal, Karachi</p>
-      <p>021-34572307</p>
-      <p>info@mjndigital.pk</p>
-    </div>
-  </div>
-
-  <div class="text-center mt-8 text-xs">
-    © Copyright 2024 MJN Digital | Powered by MJN Digital
-  </div>
-</footer>
-
-<script src="./script.js"></script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>

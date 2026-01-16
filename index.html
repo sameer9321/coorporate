@@ -1,260 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CorporateX | Home</title>
+  <title>Khurshid Media Solutions | AV Excellence</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kmsOrange: '#FF5722', // Match the logo orange
+          }
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
 </head>
-<body class="bg-gray-50">
 
-    <!-- ================= TOP BAR ================= -->
- <div class="bg-sky-500 text-white text-sm"> 
-  <div class="max-w-7xl mx-auto flex justify-between px-4 py-2">
-    <div class="flex gap-4">
-      <span>📞 021-34572307</span>
-      <span>✉ info@mjndigital.pk</span>
-    </div>
-    <div class="flex gap-3">
-      <span>in</span>
-      <span>f</span>
-    </div>
-  </div>
-</div>
+<body class="bg-gray-50 text-gray-800">
 
-<!-- NAVBAR -->
-<nav class="bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
 
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-white text-black font-bold flex items-center justify-center">
-        MJN
+  <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-3">
+        <img src="./images/KMS-logo 1.png" class="h-10" alt="KMS Logo">
+        <span class="font-bold text-xl tracking-tight">KHURSHID <span class="text-kmsOrange text-sm block -mt-1 uppercase">Media Solutions</span></span>
       </div>
-      <span class="font-semibold">MJN Digital</span>
+
+      <ul class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wide">
+        <li><a href="./index.html" class="text-kmsOrange">Home</a></li>
+        <li><a href="./about.html" class="hover:text-kmsOrange transition">About Us</a></li>
+        <li><a href="./services.html" class="hover:text-kmsOrange transition">Services</a></li>
+        <li><a href="./contact.html" class="hover:text-kmsOrange transition">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="hidden md:inline-block bg-kmsOrange hover:bg-orange-600 px-6 py-2 rounded text-sm font-bold transition">
+        GET IN TOUCH
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
     </div>
+  </nav>
 
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex gap-6 text-sm">
-      <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="hover:text-sky-400">Contact Us</a></li>
-    </ul>
-
-    <!-- Desktop Button -->
-    <a href="contact.html"
-       class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
-      <i id="menu-icon" class="fas fa-bars"></i>
-    </button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pb-4">
-    <ul class="space-y-4 text-sm">
-      <li><a href="index.html" class="block hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="block hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="block hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="block hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="block hover:text-sky-400">Contact Us</a></li>
-    </ul>
-
-    <a href="contact.html"
-       class="block mt-4 text-center bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
-  </div>
-</nav>
-
-
-
-
-<!-- HERO -->
-<section class="hero text-white">
-  <div class="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      <h2 class="text-4xl md:text-5xl font-bold mb-6">
-        Corporate Solutions That Drive Growth
-      </h2>
-      <p class="text-lg mb-8">
-        We help companies innovate, scale, and dominate the digital world.
-      </p>
-      <a href="contact.html" class="btn-primary">Get a Free Consultation</a>
+  <section class="relative bg-black text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div class="z-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+          Turning Vision into Reality Through <span class="text-kmsOrange">Sound and Sight</span>
+        </h1>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+          Welcome to KHURSHID MEDIA SOLUTIONS, a leading provider of innovative audio-visual solutions tailored to elevate communication, engagement, and experiences across all industries.
+        </p>
+        <div class="flex gap-4">
+          <a href="#services" class="bg-kmsOrange hover:bg-orange-600 px-8 py-3 rounded font-bold transition">Explore Services</a>
+          <a href="contact.html" class="border border-white hover:bg-white hover:text-black px-8 py-3 rounded font-bold transition">Contact Us</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="./images/corporate-hero 1.png" class="rounded-xl shadow-2xl border-4 border-kmsOrange/20" alt="AV Setup">
+      </div>
     </div>
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-         class="rounded-xl shadow-lg" alt="Corporate Team">
-  </div>
-</section>
+  </section>
 
-<!-- TRUSTED BY -->
-<section class="py-14 bg-white">
-  <h3 class="text-black-500 font-bold text-center mb-8 text-2xl">
-    Trusted by leading companies
-  </h3>
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div class="p-8 bg-gray-50 border-l-4 border-kmsOrange rounded-r-xl">
+        <h3 class="text-2xl font-bold mb-4 flex items-center"><i class="fas fa-bullseye text-kmsOrange mr-3"></i> Mission Statement</h3>
+        <p class="text-gray-600 leading-relaxed">To deliver innovative and reliable audio-visual solutions that elevate communication, engagement, and experiences for our clients—seamlessly integrating technology with exceptional service.</p>
+      </div>
+      <div class="p-8 bg-gray-50 border-l-4 border-black rounded-r-xl">
+        <h3 class="text-2xl font-bold mb-4 flex items-center"><i class="fas fa-eye text-kmsOrange mr-3"></i> Vision Statement</h3>
+        <p class="text-gray-600 leading-relaxed">To be the trusted AUDIO-VISUAL partner of choice for businesses, organizations, and events, known for excellence in technology, creativity, and client satisfaction.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="flex gap-8 justify-center">
-    
-    <i class="fa-solid fa-house
-              text-white text-3xl
-              bg-gray-600
-              w-16 h-16
-              flex items-center justify-center
-              rounded-full
-              hover:bg-gray-500
-              transition"></i>
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-4">OUR SERVICES</h2>
+      <div class="w-20 h-1 bg-kmsOrange mx-auto mb-14"></div>
 
-    <i class="fa-solid fa-building
-              text-white text-3xl
-              bg-gray-600
-              w-16 h-16
-              flex items-center justify-center
-              rounded-full
-              hover:bg-gray-500
-              transition"></i>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition text-center group">
+          <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-kmsOrange transition">
+            <i class="fas fa-tv text-2xl group-hover:text-white"></i>
+          </div>
+          <h4 class="font-bold uppercase mb-2">SMD Wall</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition text-center group">
+          <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-kmsOrange transition">
+            <i class="fas fa-broadcast-tower text-2xl group-hover:text-white"></i>
+          </div>
+          <h4 class="font-bold uppercase mb-2">OB Setup</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition text-center group">
+          <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-kmsOrange transition">
+            <i class="fas fa-volume-up text-2xl group-hover:text-white"></i>
+          </div>
+          <h4 class="font-bold uppercase mb-2">Sound System</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition text-center group">
+          <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-kmsOrange transition">
+            <i class="fas fa-camera text-2xl group-hover:text-white"></i>
+          </div>
+          <h4 class="font-bold uppercase mb-2">Photography</h4>
+        </div>
+        </div>
+    </div>
+  </section>
 
-    <i class="fa-solid fa-store
-              text-white text-3xl
-              bg-gray-600
-              w-16 h-16
-              flex items-center justify-center
-              rounded-full
-              hover:bg-gray-500
-              transition"></i>
+  <section id="clients" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-2">Our Distinguished Clients</h3>
+      <div class="w-24 h-1 bg-kmsOrange mx-auto mb-16"></div>
 
-    <i class="fa-solid fa-graduation-cap
-              text-white text-3xl
-              bg-gray-600
-              w-16 h-16
-              flex items-center justify-center
-              rounded-full
-              hover:bg-gray-500
-              transition"></i>
+      <div class="mb-16">
+        <h4 class="text-lg font-bold border-b-2 border-gray-100 pb-2 mb-8 text-gray-700">Government / Miscellaneous</h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <img src="./images/logo-army.png" alt="Pakistan Army" class="h-24 mx-auto object-contain hover:scale-110 transition">
+          <img src="./images/logo-navy.png" alt="Pakistan Navy" class="h-24 mx-auto object-contain hover:scale-110 transition">
+          <img src="./images/logo-airforce.png" alt="Pakistan Air Force" class="h-24 mx-auto object-contain hover:scale-110 transition">
+          <img src="./images/logo-coastguards.png" alt="Coast Guards" class="h-24 mx-auto object-contain hover:scale-110 transition">
+        </div>
+      </div>
 
-  </div>
-</section>
+      <div class="mb-16">
+        <h4 class="text-lg font-bold border-b-2 border-gray-100 pb-2 mb-8 text-gray-700">Education</h4>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+          <img src="./images/logo-icap.png" alt="ICAP" class="h-16 mx-auto object-contain grayscale hover:grayscale-0 transition">
+          <img src="./images/logo-iba.png" alt="IBA" class="h-16 mx-auto object-contain grayscale hover:grayscale-0 transition">
+          <img src="./images/logo-shu.png" alt="Salim Habib University" class="h-16 mx-auto object-contain grayscale hover:grayscale-0 transition">
+          <img src="./images/logo-iobm.png" alt="IoBM" class="h-16 mx-auto object-contain grayscale hover:grayscale-0 transition">
+          <img src="./images/logo-beaconhouse.png" alt="Beaconhouse" class="h-16 mx-auto object-contain grayscale hover:grayscale-0 transition">
+        </div>
+      </div>
 
-<!-- SERVICES -->
-<section class="py-20">
+      <div class="mb-16">
+        <h4 class="text-lg font-bold border-b-2 border-gray-100 pb-2 mb-8 text-gray-700">Corporate / Pharma</h4>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-10 items-center">
+          <img src="./images/logo-getz.png" alt="Getz Pharma" class="h-12 mx-auto object-contain">
+          <img src="./images/logo-bosch.png" alt="Bosch" class="h-12 mx-auto object-contain">
+          <img src="./images/logo-pharmevo.png" alt="PharmEvo" class="h-12 mx-auto object-contain">
+          <img src="./images/logo-hp.png" alt="HP" class="h-12 mx-auto object-contain">
+          <img src="./images/logo-martindow.png" alt="Martin Dow" class="h-12 mx-auto object-contain">
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold border-b-2 border-gray-100 pb-2 mb-8 text-gray-700">Media / Events</h4>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
+          <img src="./images/logo-hum.png" alt="HUM TV" class="h-16 mx-auto object-contain">
+          <img src="./images/logo-geo.png" alt="GEO" class="h-16 mx-auto object-contain">
+          <img src="./images/logo-ary.png" alt="ARY Digital" class="h-16 mx-auto object-contain">
+          <img src="./images/logo-bol.png" alt="BOL" class="h-16 mx-auto object-contain">
+          <img src="./images/logo-ptv.png" alt="Badar Expo" class="h-16 mx-auto object-contain">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6">
-    <h3 class="section-title text-center">Our Services</h3>
+    <h2 class="text-3xl font-bold text-center mb-4">Why Choose Us</h2>
+    <div class="w-20 h-1 bg-kmsOrange mx-auto mb-14"></div>
 
-    <div class="grid md:grid-cols-3 gap-10 mt-14">
-      <div class="card text-center">
-        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
-             class="rounded-lg mb-4">
-        <h4 class="card-title">Business Consulting</h4>
-        <p>Strategic planning and expert guidance for growth.</p>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <i class="fas fa-users-cog text-kmsOrange text-3xl mb-4"></i>
+        <h4 class="font-bold mb-2">Expert Team</h4>
+        <p class="text-sm text-gray-600">Skilled professionals for every project.</p>
       </div>
 
-      <div class="card text-center">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-             class="rounded-lg mb-4">
-        <h4 class="card-title">Web Development</h4>
-        <p>Modern, scalable, and secure digital products.</p>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <i class="fas fa-tools text-kmsOrange text-3xl mb-4"></i>
+        <h4 class="font-bold mb-2">Modern Equipment</h4>
+        <p class="text-sm text-gray-600">Latest technology for flawless execution.</p>
       </div>
 
-      <div class="card text-center">
-        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312"
-             class="rounded-lg mb-4">
-        <h4 class="card-title">Digital Marketing</h4>
-        <p>SEO, ads, and branding that deliver real results.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY CHOOSE US -->
-<section class="bg-blue-600 text-white py-20">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
-         class="rounded-xl shadow-xl">
-    <div>
-      <h3 class="text-3xl font-bold mb-6">Why Choose CorporateX?</h3>
-      <ul class="space-y-4 text-lg">
-        <li>✔ 10+ Years of Industry Experience</li>
-        <li>✔ Dedicated Professional Team</li>
-        <li>✔ Data-Driven Approach</li>
-        <li>✔ 24/7 Customer Support</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h3 class="section-title">What Clients Say</h3>
-
-    <div class="grid md:grid-cols-3 gap-10 mt-14">
-      <div class="card">
-        <p>"CorporateX transformed our business digitally."</p>
-        <h5 class="mt-4 font-semibold">— Sarah, CEO</h5>
-      </div>
-      <div class="card">
-        <p>"Highly professional team with amazing results."</p>
-        <h5 class="mt-4 font-semibold">— John, Founder</h5>
-      </div>
-      <div class="card">
-        <p>"Reliable, innovative, and fast execution."</p>
-        <h5 class="mt-4 font-semibold">— Emma, Manager</h5>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+        <i class="fas fa-handshake text-kmsOrange text-3xl mb-4"></i>
+        <h4 class="font-bold mb-2">Trusted Partners</h4>
+        <p class="text-sm text-gray-600">Long-term relationships with top clients.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="py-20 bg-gray-900 text-white text-center">
-  <h3 class="text-3xl font-bold mb-6">Ready to Grow Your Business?</h3>
-  <a href="contact.html" class="btn-primary">Contact Us Today</a>
+<section class="py-20 bg-kmsOrange text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+      Ready to Elevate Your Event or Broadcast?
+    </h2>
+    <p class="mb-8 text-lg">
+      Let Khurshid Media Solutions handle your audio-visual needs with precision and excellence.
+    </p>
+    <a href="contact.html" class="inline-block bg-black hover:bg-gray-900 px-10 py-4 rounded font-bold tracking-wide transition">
+      GET IN TOUCH
+    </a>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-gray-900 text-gray-300 text-sm py-10">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-    <div>
-      <h4 class="font-semibold mb-3 text-white">MJN Digital</h4>
-      <p>
-        Empowering organizations with innovative digital signage solutions.
-      </p>
-    </div>
-
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Quick Links</h4>
-      <ul class="space-y-1">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Why MJN Digital</li>
-        <li>Signage Solutions</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Get In Touch</h4>
-      <p>Block A, Ground Floor</p>
-      <p>Gulshan Iqbal, Karachi</p>
-      <p>021-34572307</p>
-      <p>info@mjndigital.pk</p>
+<section class="py-20 bg-black text-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <h3 class="text-4xl font-bold text-kmsOrange">7+</h3>
+        <p class="uppercase text-sm tracking-widest">Years Experience</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-kmsOrange">500+</h3>
+        <p class="uppercase text-sm tracking-widest">Successful Events</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-kmsOrange">200+</h3>
+        <p class="uppercase text-sm tracking-widest">Happy Clients</p>
+      </div>
+      <div>
+        <h3 class="text-4xl font-bold text-kmsOrange">24/7</h3>
+        <p class="uppercase text-sm tracking-widest">Technical Support</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="text-center mt-8 text-xs">
-    © Copyright 2024 MJN Digital | Powered by MJN Digital
-  </div>
-</footer>
 
-<script src="./script.js"></script>
+    <footer class="bg-black text-gray-400 py-12 border-t-4 border-kmsOrange">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">
+            Khurshid Media Solutions
+          </h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Innovative audio-visual solutions that elevate communication,
+            engagement, and experiences.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mediaksolutions/?originalSubdomain=pk"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Quick Links</h4>
+          <ul class="space-y-3text-sm ">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Get In Touch</h4>
+          <p class="text-sm">
+            <i class="fas fa-map-marker-alt text-kmsOrange mr-2 mb-3"></i>
+            Gulshan-e-Iqbal, Karachi
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-phone text-kmsOrange mr-2 mb-3"></i> 0300-9288621
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-envelope text-kmsOrange mr-2 mb-3"></i>
+            kmediasolutionspk@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="text-center mt-12 pt-8 border-t border-gray-800 text-xs uppercase tracking-widest"
+      >
+        © Copyright 2026 KHURSHID MEDIA SOLUTIONS
+      </div>
+    </footer>
+  <script src="./script.js"></script>
 </body>
-</html>
+
+</html> 

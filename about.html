@@ -3,271 +3,236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | MJN Digital</title>
+  <title>About Us | Khurshid Media Solutions</title>
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kmsOrange: '#FF5722',
+          }
+        }
+      }
     }
-  </style>
+  </script>
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-white text-gray-800">
 
-<!-- ================= TOP BAR ================= -->
- <div class="bg-sky-500 text-white text-sm"> 
-  <div class="max-w-7xl mx-auto flex justify-between px-4 py-2">
-    <div class="flex gap-4">
-      <span>📞 021-34572307</span>
-      <span>✉ info@mjndigital.pk</span>
-    </div>
-    <div class="flex gap-3">
-      <span>in</span>
-      <span>f</span>
-    </div>
-  </div>
-</div>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="bg-gray-900 text-white">
-  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-white text-black font-bold flex items-center justify-center">
-        MJN
+  <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-3">
+        <img src="./images/KMS-logo 1.png" class="h-10" alt="KMS Logo">
+        <span class="font-bold text-xl tracking-tight">KHURSHID <span class="text-kmsOrange text-sm block -mt-1 uppercase">Media Solutions</span></span>
       </div>
-      <span class="font-semibold">MJN Digital</span>
+
+      <ul class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wide">
+        <li><a href="./index.html" class="text-kmsOrange">Home</a></li>
+        <li><a href="./about.html" class="hover:text-kmsOrange transition">About Us</a></li>
+        <li><a href="./services.html" class="hover:text-kmsOrange transition">Services</a></li>
+        <li><a href="./contact.html" class="hover:text-kmsOrange transition">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="hidden md:inline-block bg-kmsOrange hover:bg-orange-600 px-6 py-2 rounded text-sm font-bold transition">
+        GET IN TOUCH
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
     </div>
-
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex gap-6 text-sm">
-      <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="hover:text-sky-400">Contact Us</a></li>
-    </ul>
-
-    <!-- Desktop Button -->
-    <a href="contact.html"
-       class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
-      <i id="menu-icon" class="fas fa-bars"></i>
-    </button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-4 pb-4">
-    <ul class="space-y-4 text-sm">
-      <li><a href="index.html" class="block hover:text-sky-400">Home</a></li>
-      <li><a href="about.html" class="block hover:text-sky-400">About Us</a></li>
-      <li><a href="why-mjn-digital.html" class="block hover:text-sky-400">Why MJN Digital</a></li>
-      <li><a href="signage-solutions.html" class="block hover:text-sky-400">Signage Solutions</a></li>
-      <li><a href="contact.html" class="block hover:text-sky-400">Contact Us</a></li>
-    </ul>
-
-    <a href="contact.html"
-       class="block mt-4 text-center bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded text-sm">
-      Book an Appointment
-    </a>
-  </div>
-</nav>
-
-
-
+  </nav>
 
 <!-- ================= HERO ================= -->
-<section class="relative">
-  <div class="h-72 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1535223289827-42f1e9919769');">
-    <div class="absolute inset-0 bg-black/60 flex items-end">
-      <h1 class="text-white text-4xl font-bold p-8">About Us</h1>
-    </div>
+<section class="bg-black">
+  <div class="max-w-7xl mx-auto px-6 py-28 text-center text-white">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+      About <span class="text-kmsOrange">Us</span>
+    </h1>
+    <p class="text-gray-300 max-w-2xl mx-auto">
+      Innovative audio-visual and digital signage solutions that power modern communication.
+    </p>
+    <div class="w-24 h-1 bg-kmsOrange mx-auto mt-6"></div>
   </div>
 </section>
 
 <!-- ================= ABOUT CONTENT ================= -->
-<section class="max-w-6xl mx-auto px-4 py-12 space-y-6 text-sm leading-7">
-  <h2 class="text-2xl font-semibold text-center">About Us</h2>
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6 space-y-6 text-base leading-8 text-gray-700">
+    
+    <p>
+      <strong>Khurshid Media Solutions</strong> is a trusted provider of
+      high-quality audio-visual and digital signage solutions, empowering
+      businesses and organizations to communicate with clarity, impact, and
+      innovation.
+    </p>
 
-  <p>
-    MJN Digital is working enthusiastically for over seven years. Customers are being facilitated by the services
-    and high-standard products offered by this brand.
-  </p>
+    <p>
+      With years of industry experience, our strength lies in professional
+      teamwork, strategic planning, and precise execution—delivering reliable
+      solutions that consistently exceed client expectations.
+    </p>
 
-  <p>
-    For seven years it is highly indulged in the proficiency of teamwork, company management, and production of
-    satisfactory products. This is one of the radial reasons the customers and clients are greatly motivated
-    toward the company.
-  </p>
+    <p>
+      We believe in innovation driven by purpose. By combining cutting-edge
+      technology with skilled professionals, we ensure every project reflects
+      creativity, efficiency, and technical excellence.
+    </p>
 
-  <p>
-    Work smart, maintain the desirability, and pursue your goal. This is the reason our company always hired a
-    skillful person who is being capable of expertise in their talents, experience, and efficiency.
-  </p>
+    <p>
+      At Khurshid Media Solutions, we focus on building long-term partnerships by
+      providing modern, scalable, and future-ready digital experiences tailored
+      to evolving business needs.
+    </p>
 
-  <p>
-    MJN Digital plays a steppingstone role in the modern world by introducing advanced innovative inventions.
-    It evaluates a unique relationship between the customers and avails them with supreme quality products.
-  </p>
+  </div>
 </section>
 
-<!-- ================= APPROACH / VISION / MISSION ================= -->
-<section class="bg-gray-50 py-12">
-  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
-    <div>
-      <h3 class="font-semibold text-lg mb-2">Our Approach and Value</h3>
-      <p class="text-sm">We promote professionalism and make sure our customers benefit from ethical standards.</p>
+
+<!-- ================= VALUES ================= -->
+<section class="bg-gray-50 py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+    
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl">
+      <i class="fas fa-handshake text-3xl text-kmsOrange mb-4"></i>
+      <h3 class="font-bold mb-2">Our Values</h3>
+      <p class="text-sm">Professionalism, integrity, and customer satisfaction.</p>
     </div>
-    <div>
-      <h3 class="font-semibold text-lg mb-2">Our Vision</h3>
-      <p class="text-sm">To promote our company professionally and inspire innovation and excellence.</p>
+
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl">
+      <i class="fas fa-eye text-3xl text-kmsOrange mb-4"></i>
+      <h3 class="font-bold mb-2">Our Vision</h3>
+      <p class="text-sm">To lead the AV and digital signage industry through innovation.</p>
     </div>
-    <div>
-      <h3 class="font-semibold text-lg mb-2">Our Mission</h3>
-      <p class="text-sm">To provide sustainable, affordable, and high-quality services to our customers.</p>
+
+    <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl">
+      <i class="fas fa-bullseye text-3xl text-kmsOrange mb-4"></i>
+      <h3 class="font-bold mb-2">Our Mission</h3>
+      <p class="text-sm">Deliver scalable, reliable, and high-performance solutions.</p>
     </div>
+
   </div>
 </section>
 
 <!-- ================= DIGITAL EDGE ================= -->
-<section class="py-14">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-center text-2xl font-semibold mb-10 text-sky-600">MJN’s Digital Edge</h2>
-
-    <div class="grid md:grid-cols-4 gap-6 text-center text-sm">
-      <div class="p-4 border rounded">
-        <div class="text-3xl mb-2">📱</div>
-        <h4 class="font-semibold">Services for Professionals</h4>
-        <p>We design and operate scalable digital signage networks.</p>
-      </div>
-      <div class="p-4 border rounded">
-        <div class="text-3xl mb-2">⭐</div>
-        <h4 class="font-semibold">11+ Years Experience</h4>
-        <p>Industry-leading operational experience.</p>
-      </div>
-      <div class="p-4 border rounded">
-        <div class="text-3xl mb-2">🖥</div>
-        <h4 class="font-semibold">Expertise in Signage</h4>
-        <p>Complete digital signage solutions.</p>
-      </div>
-      <div class="p-4 border rounded">
-        <div class="text-3xl mb-2">🏆</div>
-        <h4 class="font-semibold">Award Winning</h4>
-        <p>Trusted by top brands and institutions.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CLIENT LOGOS ================= -->
-<section class="bg-gray-50 py-14">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-2xl font-semibold mb-2">Our Distinguished Clientele</h2>
-    <p class="text-sm mb-8">A Snapshot of Our Satisfied Customers</p>
-
-    <div class="grid grid-cols-2 md:grid-cols-6 gap-6 items-center">
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-      <div class="h-16 bg-white shadow flex items-center justify-center">LOGO</div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TECHNOLOGY PARTNERS ================= -->
-<section class="py-14">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <h2 class="text-2xl font-semibold mb-4">
-      Unlocking the Potential of Digital Signage
-    </h2>
-    <p class="text-sm mb-8">
-      Harnessing leading global technologies for immersive digital experiences.
-    </p>
-
-    <div class="flex flex-wrap justify-center gap-8 text-blue-600 font-semibold">
-      <span>Unilumin</span>
-      <span>Samsung</span>
-      <span>NovaStar</span>
-      <span>Absen</span>
-      <span>Huidu</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT FORM ================= -->
-<section class="bg-sky-600 py-14 text-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-center text-2xl font-semibold mb-8">
-      Engagement Made Possible With MJN Digital Signage Solutions
+<section class="py-20">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-center text-3xl font-bold mb-12">
+      Our <span class="text-kmsOrange">Digital Edge</span>
     </h2>
 
-    <form class="grid md:grid-cols-3 gap-4 text-gray-800">
-      <input type="text" placeholder="Name" class="p-3 rounded"/>
-      <input type="text" placeholder="Company" class="p-3 rounded"/>
-      <input type="email" placeholder="Email Address" class="p-3 rounded"/>
-      <input type="text" placeholder="Website" class="p-3 rounded"/>
-      <input type="text" placeholder="City" class="p-3 rounded"/>
-      <input type="text" placeholder="How did you hear about us?" class="p-3 rounded"/>
-      <input type="text" placeholder="Phone Number" class="p-3 rounded md:col-span-2"/>
-      <input type="text" placeholder="I would like a demo of" class="p-3 rounded"/>
-      <textarea placeholder="Comments / Questions" class="p-3 rounded md:col-span-3 h-32"></textarea>
+    <div class="grid md:grid-cols-4 gap-8 text-center text-sm">
+      <div class="p-6 border rounded-xl">
+        <i class="fas fa-tv text-3xl text-kmsOrange mb-3"></i>
+        <h4 class="font-semibold mb-2">Professional AV Services</h4>
+        <p>End-to-end audio-visual solutions.</p>
+      </div>
 
-      <button class="bg-gray-900 text-white px-6 py-3 rounded md:col-span-3 hover:bg-black">
-        Submit Your Query
-      </button>
-    </form>
+      <div class="p-6 border rounded-xl">
+        <i class="fas fa-star text-3xl text-kmsOrange mb-3"></i>
+        <h4 class="font-semibold mb-2">Years of Experience</h4>
+        <p>Industry-proven expertise.</p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <i class="fas fa-desktop text-3xl text-kmsOrange mb-3"></i>
+        <h4 class="font-semibold mb-2">Digital Signage Experts</h4>
+        <p>Scalable signage networks.</p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <i class="fas fa-award text-3xl text-kmsOrange mb-3"></i>
+        <h4 class="font-semibold mb-2">Trusted by Clients</h4>
+        <p>Proven results across industries.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="bg-black py-20 text-white text-center">
+  <h2 class="text-3xl font-bold mb-6">
+    Ready to Elevate Your <span class="text-kmsOrange">Brand Experience?</span>
+  </h2>
+  <a href="contact.html"
+     class="inline-block bg-kmsOrange px-8 py-3 rounded font-bold hover:bg-orange-600">
+    Contact Us
+  </a>
 </section>
 
 <!-- ================= FOOTER ================= -->
-<footer class="bg-gray-900 text-gray-300 text-sm py-10">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-    <div>
-      <h4 class="font-semibold mb-3 text-white">MJN Digital</h4>
-      <p>
-        Empowering organizations with innovative digital signage solutions.
-      </p>
-    </div>
+    <footer class="bg-black text-gray-400 py-12 border-t-4 border-kmsOrange">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">
+            Khurshid Media Solutions
+          </h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Innovative audio-visual solutions that elevate communication,
+            engagement, and experiences.
+          </p>
 
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Quick Links</h4>
-      <ul class="space-y-1">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Why MJN Digital</li>
-        <li>Signage Solutions</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
+          <!-- Social Links -->
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mediaksolutions/?originalSubdomain=pk"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+        </div>
 
-    <div>
-      <h4 class="font-semibold mb-3 text-white">Get In Touch</h4>
-      <p>Block A, Ground Floor</p>
-      <p>Gulshan Iqbal, Karachi</p>
-      <p>021-34572307</p>
-      <p>info@mjndigital.pk</p>
-    </div>
-  </div>
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Quick Links</h4>
+          <ul class="space-y-3text-sm ">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
 
-  <div class="text-center mt-8 text-xs">
-    © Copyright 2024 MJN Digital | Powered by MJN Digital
-  </div>
-</footer>
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Get In Touch</h4>
+          <p class="text-sm">
+            <i class="fas fa-map-marker-alt text-kmsOrange mr-2 mb-3"></i>
+            Gulshan-e-Iqbal, Karachi
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-phone text-kmsOrange mr-2 mb-3"></i> 0300-9288621
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-envelope text-kmsOrange mr-2 mb-3"></i>
+            kmediasolutionspk@gmail.com
+          </p>
+        </div>
+      </div>
 
-<script src="./script.js"></script>
+      <div
+        class="text-center mt-12 pt-8 border-t border-gray-800 text-xs uppercase tracking-widest"
+      >
+        © Copyright 2026 KHURSHID MEDIA SOLUTIONS
+      </div>
+    </footer>
+
 </body>
 </html>
