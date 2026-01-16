@@ -40,9 +40,9 @@
       </div>
 
       <ul class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wide">
-        <li><a href="./index.html" class="text-kmsOrange">Home</a></li>
+        <li><a href="./index.html" class="hover:text-kmsOrange transition">Home</a></li>
         <li><a href="./about.html" class="hover:text-kmsOrange transition">About Us</a></li>
-        <li><a href="./services.html" class="hover:text-kmsOrange transition">Services</a></li>
+        <li><a href="./services.html" class="text-kmsOrange">Services</a></li>
         <li><a href="./contact.html" class="hover:text-kmsOrange transition">Contact</a></li>
       </ul>
 
@@ -54,6 +54,16 @@
         <i id="menu-icon" class="fas fa-bars"></i>
       </button>
     </div>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+    <ul class="flex flex-col gap-4 p-4 text-sm uppercase font-medium">
+      <li><a href="./index.html" class="hover:text-kmsOrange transition">Home</a></li>
+      <li><a href="./about.html" class="hover:text-kmsOrange transition">About Us</a></li>
+      <li><a href="./services.html" class="hover:text-kmsOrange transition">Services</a></li>
+      <li><a href="./contact.html" class="hover:text-kmsOrange transition">Contact</a></li>
+      <li><a href="./contact.html" class="bg-kmsOrange hover:bg-orange-600 px-4 py-2 rounded text-center font-bold transition">GET IN TOUCH</a></li>
+    </ul>
+  </div>
   </nav>
 
   <!-- ================= HERO ================= -->
@@ -194,7 +204,7 @@
     </p>
     <a href="contact.html"
        class="bg-kmsOrange hover:bg-orange-600 px-10 py-4 rounded font-bold transition">
-      Get a Free Quote
+      GET IN TOUCH
     </a>
   </section>
 
@@ -260,5 +270,6 @@
       </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 </html>

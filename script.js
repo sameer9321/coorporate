@@ -1,15 +1,16 @@
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const menuIcon = document.getElementById('menu-icon');
+ const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.getElementById('menu-icon');
 
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
 
-    if (mobileMenu.classList.contains('hidden')) {
-      menuIcon.classList.remove('fa-xmark');
-      menuIcon.classList.add('fa-bars');
+    // Toggle hamburger to X
+    if (!menu.classList.contains('hidden')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
     } else {
-      menuIcon.classList.remove('fa-bars');
-      menuIcon.classList.add('fa-xmark');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
     }
   });
