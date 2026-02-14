@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khurshid Media Solutions | Contact Us</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              kmsOrange: "#FF5722",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
+      <div
+        class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div class="flex items-center gap-3">
+          <img src="./images/KMS-logo 1.png" class="h-10" alt="KMS Logo" />
+          <span class="font-bold text-xl tracking-tight"
+            >KHURSHID
+            <span class="text-kmsOrange text-sm block -mt-1 uppercase"
+              >Media Solutions</span
+            ></span
+          >
+        </div>
+
+        <ul
+          class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-wide"
+        >
+          <li><a href="./index.html" class="hover:text-kmsOrange transition">Home</a></li>
+          <li>
+            <a href="./about.html" class="hover:text-kmsOrange transition"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="hover:text-kmsOrange transition"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="text-kmsOrange"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a
+          href="contact.html"
+          class="hidden md:inline-block bg-kmsOrange hover:bg-orange-600 px-6 py-2 rounded text-sm font-bold transition"
+        >
+          GET IN TOUCH
+        </a>
+
+        <button id="menu-btn" class="md:hidden text-xl focus:outline-none">
+          <i id="menu-icon" class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-800">
+    <ul class="flex flex-col gap-4 p-4 text-sm uppercase font-medium">
+      <li><a href="./index.html" class="hover:text-kmsOrange transition">Home</a></li>
+      <li><a href="./about.html" class="hover:text-kmsOrange transition">About Us</a></li>
+      <li><a href="./services.html" class="hover:text-kmsOrange transition">Services</a></li>
+      <li><a href="./contact.html" class="hover:text-kmsOrange transition">Contact</a></li>
+      <li><a href="./contact.html" class="bg-kmsOrange hover:bg-orange-600 px-4 py-2 rounded text-center font-bold transition">GET IN TOUCH</a></li>
+    </ul>
+  </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="bg-black text-white">
+      <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Contact <span class="text-kmsOrange">Us</span>
+        </h1>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Let’s discuss how KHURSHID MEDIA SOLUTIONS can bring your vision to
+          life.
+        </p>
+        <div class="w-24 h-1 bg-kmsOrange mx-auto mt-6"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT INFO ================= -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-phone text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Call Us</h4>
+          <p class="text-gray-600">0300-9288621</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-envelope text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Email</h4>
+          <p class="text-gray-600">kmediasolutionspk@gmail.com</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+          <i class="fas fa-map-marker-alt text-3xl text-kmsOrange mb-4"></i>
+          <h4 class="font-bold uppercase mb-2">Location</h4>
+          <p class="text-gray-600">Gulshan-e-Iqbal, Karachi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORM ================= -->
+    <section class="py-20 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center"
+      >
+        <!-- Image -->
+        <img
+          src="./images/corporate-hero 1.png"
+          class="rounded-xl shadow-2xl border-4 border-kmsOrange/20"
+          alt="Contact KMS"
+        />
+
+        <!-- Form -->
+        <div
+          class="bg-gray-50 p-10 rounded-xl shadow-lg border-l-4 border-kmsOrange"
+        >
+          <h3 class="text-3xl font-bold mb-2">
+            Send Us a <span class="text-kmsOrange">Message</span>
+          </h3>
+          <p class="text-gray-600 mb-8">
+            Fill out the form and our team will contact you shortly.
+          </p>
+
+          <form class="space-y-5">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
+
+            <input
+              type="text"
+              placeholder="Subject"
+              class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-kmsOrange outline-none"
+            />
+
+            <textarea
+              placeholder="Your Message"
+              class="w-full px-4 py-3 border rounded h-32 focus:ring-2 focus:ring-kmsOrange outline-none"
+            ></textarea>
+
+            <button
+              class="w-full bg-kmsOrange hover:bg-orange-600 text-white font-bold py-3 rounded transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-4">Our Location</h3>
+        <div class="w-20 h-1 bg-kmsOrange mx-auto mb-10"></div>
+
+        <div class="rounded-xl overflow-hidden shadow-lg border">
+          <iframe
+            class="w-full h-96"
+            src="https://www.google.com/maps?q=Gulshan%20Iqbal%20Karachi&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-black text-gray-400 py-12 border-t-4 border-kmsOrange">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">
+            Khurshid Media Solutions
+          </h4>
+          <p class="text-sm leading-relaxed mb-4">
+            Innovative audio-visual solutions that elevate communication,
+            engagement, and experiences.
+          </p>
+
+          <!-- Social Links -->
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-facebook-f text-sm"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/mediaksolutions/?originalSubdomain=pk"
+              class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-600 hover:bg-kmsOrange hover:border-kmsOrange transition"
+            >
+              <i class="fab fa-linkedin-in text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Quick Links</h4>
+          <ul class="space-y-3text-sm ">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Us</li></a>
+            <a href="./services.html"><li>Services</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold mb-6 text-white text-lg">Get In Touch</h4>
+          <p class="text-sm">
+            <i class="fas fa-map-marker-alt text-kmsOrange mr-2 mb-3"></i>
+            Gulshan-e-Iqbal, Karachi
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-phone text-kmsOrange mr-2 mb-3"></i> 0300-9288621
+          </p>
+          <p class="text-sm">
+            <i class="fas fa-envelope text-kmsOrange mr-2 mb-3"></i>
+            kmediasolutionspk@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="text-center mt-12 pt-8 border-t border-gray-800 text-xs uppercase tracking-widest"
+      >
+        © Copyright 2026 KHURSHID MEDIA SOLUTIONS
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
